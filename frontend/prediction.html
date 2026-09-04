@@ -139,24 +139,11 @@
                                 Fiber Type
                             </label>
 
-                            <select class="form-select" disabled>
-
-                                <option selected>
-                                    Select fiber type
-                                </option>
-
-                                <option>
-                                    Carbon Fiber
-                                </option>
-
-                                <option>
-                                    Glass Fiber
-                                </option>
-
-                                <option>
-                                    Aramid Fiber
-                                </option>
-
+                            <select class="form-select" id="fiberType">
+                                <option value="" selected>Select fiber type</option>
+                                <option value="Carbon Fiber">Carbon Fiber</option>
+                                <option value="Glass Fiber">Glass Fiber</option>
+                                <option value="Aramid Fiber">Aramid Fiber</option>
                             </select>
 
                         </div>
@@ -168,20 +155,10 @@
                                 Resin Type
                             </label>
 
-                            <select class="form-select" disabled>
-
-                                <option selected>
-                                    Select resin type
-                                </option>
-
-                                <option>
-                                    Epoxy
-                                </option>
-
-                                <option>
-                                    Polyester
-                                </option>
-
+                            <select class="form-select" id="resinType">
+                                <option value="" selected>Select resin type</option>
+                                <option value="Epoxy">Epoxy</option>
+                                <option value="Polyester">Polyester</option>
                             </select>
 
                         </div>
@@ -196,8 +173,11 @@
                             <input
                                 type="number"
                                 class="form-control"
+                                id="fiberVolumeFraction"
                                 placeholder="Example: 0.60"
-                                disabled
+                                min="0"
+                                max="1"
+                                step="0.01"
                             >
 
                         </div>
@@ -209,24 +189,12 @@
                                 Manufacturing Process
                             </label>
 
-                            <select class="form-select" disabled>
-
-                                <option selected>
-                                    Select process
-                                </option>
-
-                                <option>
-                                    Hand Lay-Up
-                                </option>
-
-                                <option>
-                                    Vacuum Infusion
-                                </option>
-
-                                <option>
-                                    Compression Molding
-                                </option>
-
+                            <select class="form-select" id="manufacturingProcess">
+                                <option value="" selected>Select process</option>
+                                <option value="Hand Layup">Hand Layup</option>
+                                <option value="Vacuum Infusion">Vacuum Infusion</option>
+                                <option value="Compression Molding">Compression Molding</option>
+                                <option value="Filament Winding">Filament Winding</option>
                             </select>
 
                         </div>
@@ -234,7 +202,7 @@
 
                         <button
                             class="btn btn-primary w-100"
-                            disabled
+                            id="predictButton"
                         >
                             Predict Property
                         </button>

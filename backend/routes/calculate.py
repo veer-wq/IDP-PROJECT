@@ -1,7 +1,5 @@
 from fastapi import APIRouter
-
 from models.schemas import CalculationInput
-
 
 router = APIRouter()
 
@@ -9,12 +7,15 @@ router = APIRouter()
 @router.post("/api/calculate")
 def calculate(data: CalculationInput):
 
-    length_m = data.length / 1000
-    width_m = data.width / 1000
-    thickness_m = data.thickness / 1000
+    # Dimensions are already in meters
+    length_m = data.length
+    width_m = data.width
+    thickness_m = data.thickness
 
+    # Calculate volume
     volume = length_m * width_m * thickness_m
 
+    # Calculate mass
     mass = volume * data.density
 
     return {

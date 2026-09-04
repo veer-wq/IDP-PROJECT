@@ -9,7 +9,7 @@ class CalculationInput(BaseModel):
 
 
 class PredictionInput(BaseModel):
-    length: float
-    width: float
-    thickness: float
-    density: float
+    fiber_type: str
+    resin_type: str
+    fiber_volume_fraction: float
+    manufacturing_process: str
