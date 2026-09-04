@@ -1,0 +1,952 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172033;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    background-color: #071426 !important;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.brand-icon {
+    width: 38px;
+    height: 38px;
+    border: 2px solid #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.brand-text {
+    line-height: 1.05;
+}
+
+.brand-main {
+    display: block;
+    color: white;
+}
+
+.brand-sub {
+    display: block;
+    color: #3b82f6;
+    font-size: 0.72rem;
+    letter-spacing: 1.2px;
+    margin-top: 3px;
+}
+
+.navbar-nav {
+    gap: 8px;
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    font-size: 0.9rem;
+    padding: 9px 12px !important;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: rgba(37, 99, 235, 0.12);
+}
+
+.nav-link.active {
+    color: white !important;
+    background-color: rgba(37, 99, 235, 0.18);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #061329;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 55%;
+    padding-left: 5%;
+    padding-right: 40px;
+}
+
+
+.hero-label {
+    color: #4da3ff;
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+    color: white;
+
+    font-size: 64px;
+    line-height: 1.05;
+
+    margin: 0 0 30px 0;
+
+    font-weight: 800;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    color: #3182f6;
+}
+
+
+.hero p {
+    color: #d6e2f2;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+
+.hero-image {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 0.75;
+}
+
+
+.hero-image-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #061329 0%,
+        rgba(6, 19, 41, 0.75) 20%,
+        rgba(6, 19, 41, 0.25) 60%,
+        rgba(6, 19, 41, 0.1) 100%
+    );
+}
+
+
+/* Carbon-fiber pattern */
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    right: -120px;
+    top: 40px;
+
+    background: radial-gradient(
+        circle,
+        rgba(37, 99, 235, 0.25),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Blue glow */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -100px;
+    top: 30px;
+
+    background: radial-gradient(
+        circle,
+        rgba(37, 99, 235, 0.25),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    color: #60a5fa;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 4rem;
+    line-height: 1.08;
+    font-weight: 750;
+    max-width: 760px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #3b82f6;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-main {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #1d4ed8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-main {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #94a3b8;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-outline-main:hover {
+    background-color: white;
+    color: #0f172a;
+}
+
+
+/* =========================================
+   STATISTICS STRIP
+========================================= */
+
+.stats-container {
+    position: relative;
+    z-index: 5;
+    margin-top: -65px;
+}
+
+.stats-box {
+    background-color: #0d203b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 28px 30px;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 90px;
+    padding: 5px 20px;
+}
+
+.stat-item:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+    font-size: 1.35rem;
+}
+
+.stat-number {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.stat-title {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+
+.stat-description {
+    color: #94a3b8;
+    font-size: 0.78rem;
+}
+
+
+/* =========================================
+   PLATFORM SECTION
+========================================= */
+
+.platform-section {
+    padding: 100px 0 90px;
+}
+
+.platform-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.feature-card {
+    height: 100%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 35px 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #2563eb;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+.feature-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.feature-card p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    min-height: 80px;
+}
+
+.feature-card .card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.feature-card .card-link:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   FUTURE PLATFORM SECTION
+========================================= */
+
+.future-section {
+    background-color: #0d1b31;
+    color: white;
+    padding: 80px 0;
+}
+
+.future-section h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.future-section p {
+    color: #b8c4d6;
+    line-height: 1.7;
+}
+
+.future-item {
+    padding: 25px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.035);
+}
+
+.future-item h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.future-item p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #071426;
+    color: #94a3b8;
+    padding: 55px 0 25px;
+}
+
+.footer-brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 330px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/* =========================================
+   OTHER PAGES
+========================================= */
+
+.page-header {
+    background-color: #0d1b31;
+    color: white;
+    padding: 100px 0;
+}
+
+.page-header h1 {
+    font-weight: 700;
+}
+
+.custom-card {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+    transition: 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+.card-icon {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.prediction-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+}
+
+.placeholder-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 2px;
+        margin-top: 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 3.1rem;
+    }
+
+    .stat-item {
+        padding: 15px;
+    }
+
+    .stat-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .stats-container {
+        margin-top: -40px;
+    }
+
+    .stats-box {
+        padding: 20px;
+    }
+
+    .platform-section {
+        padding-top: 70px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .feature-card {
+        padding: 30px 25px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-label {
+        font-size: 0.75rem;
+    }
+
+    .btn-main,
+    .btn-outline-main {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .stats-container {
+        margin-top: -25px;
+    }
+}
+/* ==============================
+   HERO BUTTONS
+   ============================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.hero-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 28px;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Explore Materials */
+
+.hero-buttons .btn-primary {
+    background: #2563eb;
+    color: white;
+
+    border: 1px solid #2563eb;
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+/* ML Prediction */
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+
+    border: 1px solid #64748b;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   MATERIALS PAGE
+   ========================================================= */
+
+/* Materials page background */
+body {
+    background-color: #f4f7fb;
+}
+
+/* Page heading */
+.page-header {
+    background:
+        linear-gradient(rgba(6, 19, 41, 0.92), rgba(9, 27, 54, 0.96)),
+        url("../assets/images/FibreDeCarbone.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+
+/* Materials section */
+.section-padding {
+    padding: 75px 0;
+}
+
+
+/* Material cards */
+.custom-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+
+/* Card hover effect */
+.custom-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+
+    border-color: #2563eb;
+}
+
+
+/* Card icons */
+.card-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+    border-radius: 14px;
+
+    margin-bottom: 22px;
+
+    color: #2563eb;
+    font-size: 28px;
+}
+
+
+/* Card heading */
+.custom-card h3 {
+    color: #071a38;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+/* Card paragraph */
+.custom-card p {
+    color: #475569;
+    line-height: 1.7;
+}
+
+
+/* Applications text */
+.custom-card strong {
+    color: #0f172a;
+}
+
+
+/* Card button */
+.custom-card .btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+
+.custom-card .btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .page-header {
+        padding: 65px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .section-padding {
+        padding: 50px 20px;
+    }
+
+    .custom-card {
+        padding: 25px;
+    }
+}
