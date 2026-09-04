@@ -123,9 +123,16 @@ if (calculateButton) {
             })
         })
 
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+            return response.json();
+        })
 
         .then(result => {
+
+            console.log("Calculation result:", result);
 
             document.getElementById("calculationResult").innerHTML = `
                 <div class="alert alert-success">
