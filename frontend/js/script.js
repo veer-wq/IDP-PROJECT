@@ -11,7 +11,7 @@ if (yearElement) {
 const materialsContainer = document.getElementById("materialsContainer");
 
 if (materialsContainer) {
-    fetch("http://127.0.0.1:8000/api/materials")
+    fetch("https://idp-project-5gdy.onrender.com/api/materials")
         .then(response => response.json())
         .then(materials => {
 
@@ -55,7 +55,7 @@ if (materialsContainer) {
 const processesContainer = document.getElementById("processesContainer");
 
 if (processesContainer) {
-    fetch("http://127.0.0.1:8000/api/processes")
+    fetch("https://idp-project-5gdy.onrender.com/api/processes")
         .then(response => response.json())
         .then(processes => {
 
@@ -108,7 +108,7 @@ if (calculateButton) {
         const thickness = Number(document.getElementById("thickness").value);
         const density = Number(document.getElementById("density").value);
 
-        fetch("http://127.0.0.1:8000/api/calculate", {
+        fetch("https://idp-project-5gdy.onrender.com/api/processes", {
             method: "POST",
 
             headers: {
@@ -165,7 +165,7 @@ if (predictButton) {
         const manufacturingProcess =
             document.getElementById("manufacturingProcess").value;
 
-        fetch("http://127.0.0.1:8000/api/predict", {
+        fetch("https://idp-project-5gdy.onrender.com/api/predict", {
 
             method: "POST",
 
