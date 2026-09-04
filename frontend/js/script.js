@@ -108,7 +108,7 @@ if (calculateButton) {
         const thickness = Number(document.getElementById("thickness").value);
         const density = Number(document.getElementById("density").value);
 
-        fetch("https://idp-project-5gdy.onrender.com/api/processes", {
+        fetch("https://idp-project-5gdy.onrender.com/api/calculate", {
             method: "POST",
 
             headers: {
